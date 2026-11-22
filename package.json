@@ -2,10 +2,10 @@
   "name": "steve-learning-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "An English personal learning portfolio and project hub.",
+  "description": "A bilingual English and Traditional Chinese resume, learning portfolio, and project hub.",
   "scripts": {
     "start": "node server.mjs",
-    "check": "node --check app.js && node --check server.mjs"
+    "check": "node --check app.js && node --check content.js && node --check i18n.js && node --check server.mjs"
   },
   "engines": { "node": ">=18" }
 }

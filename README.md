@@ -1,6 +1,6 @@
-# Steve — Learning by Making
+# Steven Wu — Resume & Learning Portfolio
 
-An English personal portfolio and learning hub, published at:
+A bilingual English and Traditional Chinese resume, personal portfolio, and learning hub, published at:
 
 https://stevemarauder.github.io/PersonalResume/
 
@@ -14,7 +14,20 @@ https://stevemarauder.github.io/PersonalResume/
 | Travel & Exploration | YU ATLAS — Taiwan Hot Springs | https://stevemarauder.github.io/hotspring_in_Taiwan/ |
 | Travel & Exploration | SNOWBOUND — Japan Ski Planner | https://stevemarauder.github.io/JapanTour/ |
 
-The hub is in English. Linked projects retain their own languages and interfaces. Project descriptions are based on their README files and pages, checked on November 22, 2026. The Japanese site's private teaching materials and source are not copied or published here.
+Use the EN / 繁中 controls to switch the whole website, including the resume, project descriptions, filters, search labels, saved-project controls, and accessibility labels. A language selection is remembered in this browser. Share a language-specific link with `?lang=en` or `?lang=zh-TW`. The default is English. Language changes preserve project saves, search text, and the active category.
+
+Linked projects retain their own languages and interfaces. Project descriptions are based on their README files and pages, checked on November 22, 2026. The Japanese site's private teaching materials and source are not copied or published here.
+
+## Resume content
+
+The resume includes six professional roles, five education entries, grouped skills, and five courses/certifications. Career facts and metrics come from the supplied resume; the wording has been edited and translated. The owner confirmed that the University of Pittsburgh degree is still in progress; December 2026 is shown as the expected completion date. The owner requested English-only naming, removal of the ambiguous skill previously labeled 管理頁面, and the public email `Stevenchunhsingwu@gmail.com`. No Chinese personal name, unprovided certification issuer, language proficiency score, or skill rating has been added. The original PDF is not published in the repository.
+
+Institution/company naming references consulted for translation:
+
+- University of Pittsburgh: https://www.sci.pitt.edu/academics/masters-degrees/data-science
+- Pukyong National University: https://www.pknu.ac.kr/eng/92
+- National Chi Nan University: https://ced.ncnu.edu.tw/
+- Soueast (Fujian) Motor: https://www.fjmotor.com.cn/en/About___FJMG/Company_Profile.htm
 
 ## Features
 
@@ -44,11 +57,14 @@ npm run check
 
 - `index.html`: profile text, project categories, descriptions, and links.
 - `styles.css`: layout, illustrations, colors, and responsive rules.
+- `resume.css`: resume layout and bilingual navigation.
+- `content.js`: paired English and Traditional Chinese interface/resume wording.
+- `i18n.js`: language selection, translated metadata, and accessible labels.
 - `app.js`: filters, search, saved projects, and last-opened state.
 - `favicon.svg`: browser icon.
 - `server.mjs`: local-only preview server; never needed by the published site.
 
-Each project has a stable `data-id`, a `data-category`, and search keywords. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of five projects. The site does not infer qualifications, employment history, or measured project outcomes.
+Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of five projects. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
 
 ## GitHub Pages
 

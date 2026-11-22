@@ -5,7 +5,7 @@ import path from 'node:path';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT || 4190);
-const allowed = new Set(['index.html', 'styles.css', 'app.js', 'favicon.svg']);
+const allowed = new Set(['index.html', 'styles.css', 'resume.css', 'app.js', 'content.js', 'i18n.js', 'favicon.svg']);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml' };
 const server = http.createServer(async (request, response) => {
   try {

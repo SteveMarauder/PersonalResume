@@ -1,6 +1,8 @@
 (() => {
   'use strict';
 
+  const t = (english, variables) => window.portfolioI18n.t(english, variables);
+
   const cards = [...document.querySelectorAll('.project-card')];
   const groups = [...document.querySelectorAll('.project-group')];
   const filters = [...document.querySelectorAll('[data-filter]')];
@@ -25,8 +27,8 @@
 
   function updateStorageStatus() {
     storageStatus.textContent = storageAvailable
-      ? 'Saves and last opened stay in this browser.'
-      : 'Browser storage is unavailable. Saves last for this visit.';
+      ? t('Saves and last opened stay in this browser.')
+      : t('Browser storage is unavailable. Saves last for this visit.');
   }
 
   function persist() {
@@ -47,7 +49,7 @@
     const link = document.querySelector('#last-opened-link');
     link.textContent = card.querySelector('h4').textContent;
     link.href = source.href;
-    link.setAttribute('aria-label', `Reopen ${link.textContent} (opens in a new tab)`);
+    link.setAttribute('aria-label', t('Reopen {title} (opens in a new tab)', { title: link.textContent }));
     box.hidden = false;
   }
 
@@ -57,8 +59,8 @@
       const isSaved = saved.has(card.dataset.id);
       const title = card.querySelector('h4').textContent;
       button.setAttribute('aria-pressed', String(isSaved));
-      button.setAttribute('aria-label', `${isSaved ? 'Unsave' : 'Save'} ${title}`);
-      button.querySelector('span').textContent = isSaved ? 'Saved' : 'Save';
+      button.setAttribute('aria-label', t(isSaved ? 'Unsave {title}' : 'Save {title}', { title }));
+      button.querySelector('span').textContent = t(isSaved ? 'Saved' : 'Save');
       button.hidden = false;
     }
     document.querySelector('#saved-count').textContent = String(saved.size);
@@ -79,7 +81,7 @@
     for (const group of groups) {
       const visible = [...group.querySelectorAll('.project-card')].filter(card => !card.hidden).length;
       group.hidden = visible === 0;
-      group.querySelector('.group-count').textContent = `${visible} project${visible === 1 ? '' : 's'}`;
+      group.querySelector('.group-count').textContent = t(visible === 1 ? '{count} project' : '{count} projects', { count: visible });
       if (visible) visibleGroups += 1;
     }
     for (const button of filters) {
@@ -87,13 +89,14 @@
       button.setAttribute('aria-pressed', String(selected));
       button.classList.toggle('is-active', selected);
     }
-    document.querySelector('#results-count').textContent = `${visibleCount} project${visibleCount === 1 ? '' : 's'} across ${visibleGroups} categor${visibleGroups === 1 ? 'y' : 'ies'}`;
+    const resultTemplate = `{count} project${visibleCount === 1 ? '' : 's'} across {categories} categor${visibleGroups === 1 ? 'y' : 'ies'}`;
+    document.querySelector('#results-count').textContent = t(resultTemplate, { count: visibleCount, categories: visibleGroups });
     document.querySelector('#empty-state').hidden = visibleCount !== 0;
     const emptySaved = activeFilter === 'saved' && saved.size === 0;
-    document.querySelector('#empty-title').textContent = emptySaved ? 'Your personal shortlist starts here.' : 'No projects found.';
+    document.querySelector('#empty-title').textContent = t(emptySaved ? 'Your personal shortlist starts here.' : 'No projects found.');
     document.querySelector('#empty-description').textContent = emptySaved
-      ? 'Choose Save on any project to keep it close at hand.'
-      : 'Try another topic or a shorter search.';
+      ? t('Choose Save on any project to keep it close at hand.')
+      : t('Try another topic or a shorter search.');
   }
 
   for (const button of filters) {
@@ -146,6 +149,13 @@
       showLastOpened();
       applyFilters();
     } catch { /* Keep this tab's usable state if another tab writes invalid data. */ }
+  });
+
+  window.addEventListener('portfolio:languagechange', () => {
+    updateStorageStatus();
+    updateSavedButtons();
+    showLastOpened();
+    applyFilters();
   });
 
   document.querySelector('#collection-tools').hidden = false;
