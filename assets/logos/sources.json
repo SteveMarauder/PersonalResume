@@ -1,0 +1,66 @@
+{
+  "corning": {
+    "name": "Corning",
+    "zh": "康寧公司",
+    "filename": "corning.svg",
+    "website": "https://www.corning.com/",
+    "source": "https://commons.wikimedia.org/wiki/File:Corning_Incorporated_Logo.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Corning_Incorporated_Logo.svg"
+  },
+  "innolux": {
+    "name": "Innolux Corporation",
+    "zh": "群創光電",
+    "filename": "innolux.png",
+    "website": "https://www.innolux.com/tw/",
+    "source": "https://www.innolux.com/tw/",
+    "asset_url": "https://www.innolux.com/global/images/logo.png"
+  },
+  "soueast": {
+    "name": "Soueast Motor",
+    "zh": "東南汽車",
+    "filename": "soueast.png",
+    "website": "https://www.soueast-motor.com/",
+    "source": "https://www.soueast-motor.com/",
+    "asset_url": "https://www.soueast-motor.com/img/header_logo.png"
+  },
+  "zenghsing": {
+    "name": "Zeng Hsing Industrial Co., Ltd.",
+    "zh": "伸興工業",
+    "filename": "zenghsing.png",
+    "website": "https://www.zenghsing.com.tw/",
+    "source": "https://www.zenghsing.com.tw/",
+    "asset_url": "https://www.zenghsing.com.tw/wp-content/uploads/2016/11/logo@2x.png"
+  },
+  "pitt": {
+    "name": "University of Pittsburgh",
+    "zh": "匹茲堡大學",
+    "filename": "pitt.png",
+    "website": "https://www.pitt.edu/",
+    "source": "https://www.pitt.edu/",
+    "asset_url": "https://www.pitt.edu/sites/default/files/assets/pitt_shield_white-home.png"
+  },
+  "nsysu": {
+    "name": "National Sun Yat-sen University",
+    "zh": "國立中山大學",
+    "filename": "nsysu.jpg",
+    "website": "https://www.nsysu.edu.tw/",
+    "source": "https://www.nsysu.edu.tw/p/412-1000-1508.php",
+    "asset_url": "https://www.nsysu.edu.tw/var/file/0/1000/img/80/logo03.jpg"
+  },
+  "pknu": {
+    "name": "Pukyong National University",
+    "zh": "國立釜慶大學",
+    "filename": "pknu.png",
+    "website": "https://www.pknu.ac.kr/eng",
+    "source": "https://www.pknu.ac.kr/eng/14",
+    "asset_url": "https://www.pknu.ac.kr/images/front/sub/univ_logo00.png"
+  },
+  "ncnu": {
+    "name": "National Chi Nan University",
+    "zh": "國立暨南國際大學",
+    "filename": "ncnu.png",
+    "website": "https://www.ncnu.edu.tw/",
+    "source": "https://service.ncnu.edu.tw/ncnuweb/units/share/全校共用/web_material/material-logo.htm",
+    "asset_url": "https://service.ncnu.edu.tw/ncnuweb/units/share/全校共用/web_material/images/logo/175_175.png"
+  }
+}

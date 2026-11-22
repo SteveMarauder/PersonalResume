@@ -31,6 +31,9 @@
     for (const element of document.querySelectorAll('[data-i18n-placeholder]')) {
       element.setAttribute('placeholder', t(element.dataset.i18nPlaceholder));
     }
+    for (const element of document.querySelectorAll('[data-i18n-alt]')) {
+      element.setAttribute('alt', t(element.dataset.i18nAlt));
+    }
     for (const button of languageButtons) {
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
     }

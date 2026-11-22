@@ -8,6 +8,7 @@ https://stevemarauder.github.io/PersonalResume/
 
 | Category | Project | Website |
 | --- | --- | --- |
+| Data Science | Data Science Notes | https://stevemarauder.github.io/data-science-python/ |
 | Bayesian Statistics | Bayes Notes | https://stevemarauder.github.io/think-bayes-learning/ |
 | Bayesian Statistics | Bayesian Thinking Lab | https://stevemarauder.github.io/bayesian_thinking_learning/ |
 | Language Learning | Hibi Nihongo — Japanese N4 | https://hibi-nihongo-n4-steve.leonsika.chatgpt.site/ |
@@ -34,7 +35,7 @@ Institution/company naming references consulted for translation:
 - Category filters and multiword project search.
 - Saved projects and last-opened website, stored only in this browser.
 - Keyboard navigation, visible focus, reduced-motion support, and responsive layouts.
-- All five website links remain available without JavaScript.
+- All six website links remain available without JavaScript.
 - No external libraries, fonts, trackers, or network requests on page load.
 
 Browser records do not sync across devices or record progress inside the linked sites. Clearing this site's browser data removes its saved-project and last-opened records. Failed browser storage falls back to a usable in-memory experience.
@@ -58,13 +59,17 @@ npm run check
 - `index.html`: profile text, project categories, descriptions, and links.
 - `styles.css`: layout, illustrations, colors, and responsive rules.
 - `resume.css`: resume layout and bilingual navigation.
+- `identities.css`: institution logo presentation and the Data Science project artwork.
+- `assets/logos/`: eight institution identities, with source pages and original asset URLs in `sources.json`. Seven assets were obtained directly from official institution/company websites; the Corning SVG is the documented Wikimedia copy of its corporate wordmark. Original proportions and colors are retained. No external logo service or runtime hotlinking is used.
 - `content.js`: paired English and Traditional Chinese interface/resume wording.
 - `i18n.js`: language selection, translated metadata, and accessible labels.
 - `app.js`: filters, search, saved projects, and last-opened state.
 - `favicon.svg`: browser icon.
 - `server.mjs`: local-only preview server; never needed by the published site.
 
-Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of five projects. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
+Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of six projects in four categories. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
+
+Data Science Notes was verified against https://github.com/SteveMarauder/data-science-python and its live GitHub Pages site on November 22, 2026. It is an independent companion to Learning Data Science, with 21 bilingual chapter guides and original exercises and Python examples; the portfolio does not describe it as a full book translation.
 
 ## GitHub Pages
 

@@ -1,0 +1,52 @@
+/* Institution marks retain their original colors, proportions, and clear space. */
+.institution-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 18px; margin: 0 0 15px; }
+.institution-header .resume-date { margin: 0; max-width: 190px; text-align: right; flex: 1 1 120px; }
+.institution-logo { display: inline-flex; align-items: center; justify-content: center; width: 136px; height: 60px; flex: none; padding: 12px; background: #fff; border: 1px solid #e0e6ed; border-radius: 9px; }
+.institution-logo img { display: block; max-width: 100%; width: 110px; height: 100%; object-fit: contain; }
+.institution-logo.school-logo { width: 68px; height: 68px; padding: 7px; }
+.institution-logo.school-logo img { width: 54px; height: 54px; }
+.institution-logo.logo-pitt { width: 168px; height: 64px; background: #003594; border-color: #003594; padding: 12px; }
+.institution-logo.logo-pitt img { width: 144px; height: 44px; }
+.institution-logo:hover { border-color: #8aa8c2; }
+.experience-entry:before { top: 25px; }
+.experience-entry[data-institution] { padding-bottom: 34px; }
+.education-entry h4 { font-size: 1.1rem; }
+.category-mark.teal { background: #388b8c; }
+.topic-symbol.teal { color: #235e63; background: #e5f1f0; }
+.data-science-card { display: grid; grid-template-columns: .85fr 1.15fr; }
+.data-science-card .project-art { height: 100%; min-height: 340px; border-bottom: 0; border-right: 1px solid #d8e6e6; }
+.data-science-card .card-body { padding: 27px 30px; }
+.data-science-art { background: #e7f1f1; color: #245d64; }
+.data-science-art .art-label { top: 25px; left: 27px; }
+.data-science-art-title { font-family: Georgia,"Times New Roman",serif; position: absolute; top: 74px; left: 27px; font-size: 3.1rem; line-height: .98; letter-spacing: -.04em; z-index: 1; }
+.data-science-chart { position: absolute; right: 15px; bottom: 50px; width: 72%; height: 160px; }
+.data-science-art-bottom { position: absolute; left: 27px; right: 27px; bottom: 24px; display: flex; justify-content: space-between; align-items: center; gap: 15px; font-family: monospace; font-size: .75rem; }
+.notes-heading { font-size: .75rem; }
+.art-label { font-size: .75rem; }
+.filters { align-items: center; }
+.saved-filter { margin-left: 0; }
+@media(max-width:1050px) {
+  .institution-header .resume-date { text-align: left; }
+  .data-science-art-title { font-size: 2.8rem; }
+  .art-label { font-size: .68rem; }
+}
+@media(max-width:760px) {
+  .institution-logo { width: 128px; height: 56px; }
+  .institution-logo.logo-pitt { width: 168px; }
+  .institution-header { gap: 11px 14px; }
+  .institution-header .resume-date { text-align: left; font-size: .8rem; }
+  .education-entry .institution-header .resume-date { flex-basis: 110px; }
+  .data-science-card { display: flex; flex-direction: column; }
+  .data-science-card .project-art { min-height: 235px; height: 235px; border-right: 0; border-bottom: 1px solid #d8e6e6; }
+  .data-science-card .card-body { padding: 21px; }
+  .data-science-art-title { top: 60px; font-size: 2.8rem; }
+  .data-science-chart { width: 52%; height: 76px; right: 7px; bottom: 40px; }
+  .data-science-art-bottom { left: 22px; right: 22px; bottom: 18px; }
+  .art-label { font-size: .66rem; }
+  .field-notes .notes-heading { font-size: .7rem; }
+}
+@media print {
+  .institution-logo:after { content: none !important; }
+  .institution-logo { break-inside: avoid; }
+  .institution-logo.logo-pitt { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

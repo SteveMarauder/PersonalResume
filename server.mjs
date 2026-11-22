@@ -5,8 +5,8 @@ import path from 'node:path';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT || 4190);
-const allowed = new Set(['index.html', 'styles.css', 'resume.css', 'app.js', 'content.js', 'i18n.js', 'favicon.svg']);
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml' };
+const allowed = new Set(['index.html', 'styles.css', 'resume.css', 'identities.css', 'app.js', 'content.js', 'i18n.js', 'favicon.svg', 'assets/logos/corning.svg', 'assets/logos/innolux.png', 'assets/logos/soueast.png', 'assets/logos/zenghsing.png', 'assets/logos/pitt.png', 'assets/logos/nsysu.jpg', 'assets/logos/pknu.png', 'assets/logos/ncnu.png']);
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg' };
 const server = http.createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
