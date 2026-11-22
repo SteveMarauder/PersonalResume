@@ -14,7 +14,7 @@ window.PORTFOLIO_CONTENT = {
     "Explore my projects": "探索學習專案",
     "selected projects": "個精選專案",
     "areas of curiosity": "個探索領域",
-    "THE THREADS THAT CONNECT THE WORK": "串起實作與學習的三條線",
+    "THE THREADS THAT CONNECT THE WORK": "串起實作與學習的探索路線",
     "Understand uncertainty.": "理解不確定性。",
     "Bayesian statistics & applied reasoning": "貝氏統計與應用推論",
     "Learn a little, every day.": "每天，學一點。",
