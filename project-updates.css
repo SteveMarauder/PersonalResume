@@ -1,0 +1,39 @@
+/* The growing collection keeps existing project IDs and saved items intact. */
+.category-mark.purple { background: #81709f; }
+.topic-symbol.purple { color: #695580; background: #eee8f4; }
+.field-notes .topic-shortcut { padding-block: 16px; }
+.new-project-art-title { position: absolute; left: 25px; top: 58px; font-family: Georgia,"Times New Roman",serif; font-size: 2.3rem; line-height: .98; letter-spacing: -.045em; z-index: 1; }
+.new-art-caption { position: absolute; left: 25px; right: 22px; bottom: 17px; font-size: .75rem; line-height: 1.5; z-index: 1; }
+.practical-statistics-art { background: #edf0f8; color: #3a5481; }
+.statistics-plot { position: absolute; right: 12px; bottom: 36px; width: 49%; height: 135px; }
+.people-practice-art { background: #eee8f5; color: #624c7c; }
+.practice-table { position: absolute; width: 43%; height: 135px; right: 15px; bottom: 39px; }
+.hr-study-art { background: #eeecf5; color: #5e527f; }
+.people-map { position: absolute; width: 47%; height: 160px; right: 0; bottom: 32px; }
+.data-science-group-grid .data-science-card { display: flex; flex-direction: column; }
+.data-science-group-grid .data-science-card .project-art { height: 220px; min-height: 0; border-right: 0; border-bottom: 1px solid #d8e6e6; }
+.data-science-group-grid .data-science-card .card-body { padding: 23px 25px 25px; }
+.data-science-group-grid .data-science-art-title { top: 58px; font-size: 2.3rem; }
+.data-science-group-grid .data-science-chart { width: 49%; height: 128px; right: 12px; bottom: 42px; }
+.data-science-group-grid .data-science-art-bottom { bottom: 17px; }
+@media(min-width:1400px) {
+  .collection-tools { flex-direction: column; align-items: stretch; }
+  .filters { flex: none; }
+  .search-box { flex: none; }
+}
+@media(max-width:1050px) {
+  .new-project-art-title { font-size: 2.05rem; }
+  .statistics-plot { width: 43%; height: 102px; bottom: 47px; }
+  .practice-table { width: 39%; height: 105px; bottom: 47px; }
+  .people-map { width: 43%; height: 130px; bottom: 40px; }
+  .data-science-group-grid .data-science-chart { width: 45%; height: 105px; bottom: 45px; }
+}
+@media(max-width:760px) {
+  .field-notes .topic-shortcut { padding-block: 15px; }
+  .new-project-art-title { left: 22px; top: 50px; font-size: 2.25rem; line-height: 1.03; }
+  .new-art-caption { display: none; }
+  .statistics-plot, .practice-table, .people-map { width: 55%; height: 75px; right: 13px; bottom: 16px; }
+  .data-science-group-grid .data-science-card .card-body { padding: 21px; }
+  .data-science-group-grid .data-science-art-title { font-size: 2.2rem; top: 57px; left: 22px; }
+  .data-science-group-grid .data-science-chart { width: 45%; height: 76px; bottom: 40px; right: 7px; }
+}

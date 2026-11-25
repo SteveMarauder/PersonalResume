@@ -9,8 +9,11 @@ https://stevemarauder.github.io/PersonalResume/
 | Category | Project | Website |
 | --- | --- | --- |
 | Data Science | Data Science Notes | https://stevemarauder.github.io/data-science-python/ |
+| Data Science | Practical Statistics Notes | https://stevemarauder.github.io/practical-statistics-learning/ |
 | Bayesian Statistics | Bayes Notes | https://stevemarauder.github.io/think-bayes-learning/ |
 | Bayesian Statistics | Bayesian Thinking Lab | https://stevemarauder.github.io/bayesian_thinking_learning/ |
+| People Analytics | People Analytics Practice Lab | https://stevemarauder.github.io/HR_analytics_fundamentals/ |
+| People Analytics | HR Analytics Study Guide | https://stevemarauder.github.io/HR_Analytics_mainpage/ |
 | Language Learning | Hibi Nihongo — Japanese N4 | https://hibi-nihongo-n4-steve.leonsika.chatgpt.site/ |
 | Travel & Exploration | YU ATLAS — Taiwan Hot Springs | https://stevemarauder.github.io/hotspring_in_Taiwan/ |
 | Travel & Exploration | SNOWBOUND — Japan Ski Planner | https://stevemarauder.github.io/JapanTour/ |
@@ -35,7 +38,7 @@ Institution/company naming references consulted for translation:
 - Category filters and multiword project search.
 - Saved projects and last-opened website, stored only in this browser.
 - Keyboard navigation, visible focus, reduced-motion support, and responsive layouts.
-- All six website links remain available without JavaScript.
+- All nine website links remain available without JavaScript.
 - No external libraries, fonts, trackers, or network requests on page load.
 
 Browser records do not sync across devices or record progress inside the linked sites. Clearing this site's browser data removes its saved-project and last-opened records. Failed browser storage falls back to a usable in-memory experience.
@@ -60,6 +63,7 @@ npm run check
 - `styles.css`: layout, illustrations, colors, and responsive rules.
 - `resume.css`: resume layout and bilingual navigation.
 - `identities.css`: institution logo presentation and the Data Science project artwork.
+- `project-updates.css`: paired Data Science cards and People Analytics artwork/layout.
 - `assets/logos/`: eight institution identities, with source pages and original asset URLs in `sources.json`. Seven assets were obtained directly from official institution/company websites; the Corning SVG is the documented Wikimedia copy of its corporate wordmark. Original proportions and colors are retained. No external logo service or runtime hotlinking is used.
 - `content.js`: paired English and Traditional Chinese interface/resume wording.
 - `i18n.js`: language selection, translated metadata, and accessible labels.
@@ -67,9 +71,19 @@ npm run check
 - `favicon.svg`: browser icon.
 - `server.mjs`: local-only preview server; never needed by the published site.
 
-Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of six projects in four categories. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
+Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of nine projects in five categories. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
 
 Data Science Notes was verified against https://github.com/SteveMarauder/data-science-python and its live GitHub Pages site on November 22, 2026. It is an independent companion to Learning Data Science, with 21 bilingual chapter guides and original exercises and Python examples; the portfolio does not describe it as a full book translation.
+
+## November 25, 2026 project review
+
+The public GitHub inventory was compared with the existing selected collection. Three repositories created after the previous review were added, and all three live websites returned HTTP 200:
+
+- `practical-statistics-learning`: an independent bilingual companion to Practical Statistics for Data Scientists; categorized under Data Science.
+- `HR_analytics_fundamentals`: a Traditional Chinese coding practice site using synthetic HR data; categorized under the new People Analytics area.
+- `HR_Analytics_mainpage`: a Traditional Chinese HR Analytics course-preparation guide; categorized under People Analytics.
+
+Descriptions were checked against each repository's README. The portfolio's descriptions and controls are bilingual; linked projects retain their own supported languages. Existing project IDs and the browser storage namespace were preserved. Older unselected repositories were not automatically added as new projects.
 
 ## GitHub Pages
 
