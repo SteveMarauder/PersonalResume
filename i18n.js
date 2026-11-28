@@ -39,7 +39,7 @@
     }
     for (const card of document.querySelectorAll('.project-card')) {
       const title = card.querySelector('h4').textContent;
-      card.querySelector('.project-open').setAttribute('aria-label', t('Open {title} website (opens in a new tab)', { title }));
+      card.querySelector('.project-open')?.setAttribute('aria-label', t('Open {title} website (opens in a new tab)', { title }));
       const sourceLink = card.querySelector('.source-link');
       if (sourceLink) sourceLink.setAttribute('aria-label', t('{title} source code (opens in a new tab)', { title }));
     }

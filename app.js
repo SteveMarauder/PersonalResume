@@ -44,7 +44,7 @@
   function showLastOpened() {
     const card = cards.find(item => item.dataset.id === lastOpened);
     const box = document.querySelector('#last-opened');
-    if (!card) { box.hidden = true; return; }
+    if (!card?.querySelector('.project-open')) { box.hidden = true; return; }
     const source = card.querySelector('.project-open');
     const link = document.querySelector('#last-opened-link');
     link.textContent = card.querySelector('h4').textContent;
@@ -129,8 +129,8 @@
       showLastOpened();
     };
     const openLink = card.querySelector('.project-open');
-    openLink.addEventListener('click', rememberVisit);
-    openLink.addEventListener('auxclick', event => { if (event.button === 1) rememberVisit(); });
+    openLink?.addEventListener('click', rememberVisit);
+    openLink?.addEventListener('auxclick', event => { if (event.button === 1) rememberVisit(); });
   }
   search.addEventListener('input', applyFilters);
   document.querySelector('#reset-filters').addEventListener('click', () => {

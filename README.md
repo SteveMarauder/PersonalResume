@@ -8,6 +8,9 @@ https://stevemarauder.github.io/PersonalResume/
 
 | Category | Project | Website |
 | --- | --- | --- |
+| Data Science | Data Science from Scratch · Study Notes | Deployment in preparation; private source saved |
+| Data Science | Practical Statistics · Private Study | https://statistics-notes-steve-20261127.leonsika.chatgpt.site |
+| Deep Learning | Deep Learning Study Notes | https://deep-learning-study-notes.leonsika.chatgpt.site |
 | Data Science | Data Science Notes | https://stevemarauder.github.io/data-science-python/ |
 | Data Science | Practical Statistics Notes | https://stevemarauder.github.io/practical-statistics-learning/ |
 | Bayesian Statistics | Bayes Notes | https://stevemarauder.github.io/think-bayes-learning/ |
@@ -71,7 +74,7 @@ npm run check
 - `favicon.svg`: browser icon.
 - `server.mjs`: local-only preview server; never needed by the published site.
 
-Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of nine projects in five categories. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
+Each project has a stable `data-id`, a `data-category`, and search keywords in both languages. Keep IDs stable to preserve browser saves. Filter totals reflect this selected collection of twelve projects in six categories. Edit the English text and its matching `data-i18n` key together, then update the corresponding Traditional Chinese entry in `content.js`.
 
 Data Science Notes was verified against https://github.com/SteveMarauder/data-science-python and its live GitHub Pages site on November 22, 2026. It is an independent companion to Learning Data Science, with 21 bilingual chapter guides and original exercises and Python examples; the portfolio does not describe it as a full book translation.
 
@@ -88,3 +91,11 @@ Descriptions were checked against each repository's README. The portfolio's desc
 ## GitHub Pages
 
 The deployment uses the repository's root on the `main` branch. Keep `.nojekyll` beside `index.html`. All local asset URLs are relative, so the site works beneath `/PersonalResume/`. Changes pushed to the configured publishing branch are published by GitHub Pages.
+
+## November 28, 2026 project review
+
+Added three new owned private projects after checking the authenticated GitHub inventory and repository READMEs. Deep Learning Study Notes and Practical Statistics · Private Study have existing owner-only Sites publications; their portfolio cards link to those publications and clearly label the access restriction. The public Practical Statistics Notes card remains a separate public learning companion.
+
+Data Science from Scratch · Study Notes is listed with deployment in preparation. Its repository documents unfinished hosting and sign-in configuration, so the card has no launch or private-source link. It can still be searched and saved. No unverified association with another Data Science Site is asserted.
+
+Only independent project summaries are included here. Private source material, notes, login allowlists, and credentials are excluded. Existing Site audiences, portfolio project IDs, and browser storage namespaces are unchanged.

@@ -37,3 +37,19 @@
   .data-science-group-grid .data-science-art-title { font-size: 2.2rem; top: 57px; left: 22px; }
   .data-science-group-grid .data-science-chart { width: 45%; height: 76px; bottom: 40px; right: 7px; }
 }
+
+/* Private study projects show their actual access and publication status. */
+.category-mark.violet { background: #7365a0; }
+.topic-symbol.violet { color: #66558e; background: #eeebf7; }
+.deep-art { background: #eeeaf6; color: #65518b; }
+.stats-private-art { background: #e8f0f6; color: #456481; }
+.scratch-art { background: #e8f1ef; color: #3c6a60; }
+.private-study-diagram { position: absolute; right: 6px; bottom: 37px; width: 46%; height: 135px; }
+.private-study-art .new-project-art-title { font-size: 2.15rem; }
+.project-card .card-links { flex-wrap: wrap; gap: 12px 18px; }
+.project-card .platform-label { font-size: .875rem; line-height: 1.5; }
+.project-pending { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid #cbd8df; border-radius: 7px; background: #f2f5f7; color: #455c70; font-size: .875rem; font-weight: 600; }
+@media(max-width:760px) {
+  .private-study-art .new-project-art-title { font-size: 2.15rem; top: 54px; }
+  .private-study-diagram { height: 92px; width: 47%; bottom: 19px; right: 9px; }
+}
